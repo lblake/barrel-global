@@ -1,0 +1,30 @@
+{{ 'full-img.css' | asset_url | stylesheet_tag }}
+{% if section.settings.img-full !=blank %}
+<img src="{{ section.settings.img-full | img_url: 'master' }}" height="" width="">
+{% endif %}
+{% if section.settings.img-mob !=blank %}
+<img src="{{ section.settings.img-mob | img_url: 'master' }}" height="" width="">
+{% endif %}
+{% schema %}
+  {
+    "name": "Full image",
+    "class": "full_img",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img-full",
+        "label": "Desktop Image"
+      },
+        {
+        "type": "image_picker",
+        "id": "img-mob",
+        "label": "Mobile Image"
+      }
+    ],
+  "presets": [
+    {
+      "name": "Full image"
+    }
+  ]
+  }
+{% endschema %}

@@ -1,0 +1,60 @@
+{{ 'bg-imag-with-text.css' | asset_url | stylesheet_tag }}
+<div class="{{ section.settings.class }} pro_sec_bottom">
+   <div class="page-width">
+<div class="img_sec1" style="background-image: url('{{ section.settings.bg-img | img_url: 'original' }}')"></div>
+<div class="text">
+  <h2>{{ section.settings.heading }}</h2>
+  <p>{{ section.settings.cont }}</p>
+  <a href="{{ section.settings.btn-url }}">{{ section.settings.btn-text }}</a>
+</div>
+<div class="img_sec2" style="background-image: url('{{ section.settings.bg-image | img_url: 'original' }}')"></div>
+</div>
+  </div>
+{% schema %}
+  {
+    "name": "Background img with text",
+    "class": "two-image-with-text",
+    "settings": [
+              {
+        "type": "text",
+        "id": "class",
+        "label": "class"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg-img",
+        "label": "Background image"
+      },
+      {
+        "type":"textarea",
+        "id": "heading",
+        "label": "Heading"
+      },
+        {
+        "type": "text",
+        "id": "cont",
+        "label": "Content"
+      },
+      {
+        "type": "text",
+        "id": "btn-text",
+        "label": "Button text"
+      },
+       {
+        "type": "url",
+        "id": "btn-url",
+        "label": "Button link"
+      },
+        {
+        "type": "image_picker",
+        "id": "bg-image",
+        "label": "Background image"
+      }
+    ],
+"presets" : [
+{
+  "name" : "Background img with text"
+  }
+]
+  }
+{% endschema %}

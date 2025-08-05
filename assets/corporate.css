@@ -1,0 +1,95 @@
+.corporate_sec1 {
+    border: 2px solid #000;
+    border-top: 0;
+    background: #F1F1EE;
+}
+.corporate_sec1 .page-width {
+    display: grid;
+    grid-template-columns: 495px 637px;
+    column-gap: 80px;
+    padding: 60px 38px !important;
+}
+.pro-details p.regular-price {
+    font-size: 50px;
+    line-height: 40px;
+    color: #000;
+    font-family: Futura Hv BT!important;
+    font-weight: 900;
+    letter-spacing: 0;
+    margin: 0;
+}
+p.short-desc {
+    color: #000000;
+    font-size: 22px;
+    line-height: 36.3px;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.pro-details p.compare-price span {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Roundo!important;
+}
+.pro-details p.compare-price {
+    font-size: 60px;
+    line-height: 40px;
+    color: #67B7A8;
+    font-family: Futura Hv BT!important;
+    font-weight: 900;
+    letter-spacing: 0;
+    margin: 0;
+}
+.pro-details p.regular-price span {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Roundo!important;
+}
+.corporate_sec1 .feature-pro-img {
+    text-align: center;
+}
+.pro-details h2 {
+    font-size: 46px;
+    line-height: 55.2px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.pro-details a {
+    border: 1px solid #090909;
+    color: #000;
+    font-family: Futura Hv BT;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    padding: 30px 40px;
+    opacity: 1;
+    letter-spacing: normal;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 50px;
+    background: #67B7A8;
+    width: 100%;
+    max-width: 472px;
+    text-align: center;
+}
+.price_wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    align-items: flex-end;
+}
+.pro-details h2 strong {
+    display: inline-block;
+    width: 100%;
+    color: #67B7A8;
+}

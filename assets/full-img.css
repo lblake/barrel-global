@@ -1,0 +1,9 @@
+.full_img {
+    background-color: #f1f1ef;
+    width: 100%;
+    text-align: center;
+}
+.full_img img {
+    width: 100%;
+    max-width: 1174px;
+}

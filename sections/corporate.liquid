@@ -1,0 +1,46 @@
+{{ 'corporate.css' | asset_url | stylesheet_tag }}
+{% for product in collections.frontpage.products %}
+  <div class="product corporate_sec1">
+  <div class="page-width">
+    <div class="feature-pro-img">
+        <img src="{{ product.featured_image.src | product_img_url: 'master' }}" alt="{{ product.title }}" />
+    </div>
+    <div class="pro-details">
+    <h2>{{ section.settings.title }}</h2>  
+    <p class="short-desc">{{ product.description }}</p>
+  <div class="price_wrap">
+      {% if product.compare_at_price > product.price %}
+    <p class="regular-price"> {{ product.compare_at_price | money }}<span>Regular Price</span></p>
+    <p class="compare-price">{{ product.price | money }}<span>for 20 bottles or more</span></p>
+  {% else %}
+    <p class="regular-price">Price: {{ product.price | money }}</p>
+  {% endif %}
+  </div>
+    <a href="{{ product.url }}">Create your own tequila</a>
+    </div>
+      </div>
+  </div>
+{% endfor %}
+
+{% schema %}
+  {
+    "name": "corporate",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+      "type": "collection",
+      "id": "custom-product",
+      "label": "Select product"
+      }
+    ],
+"presets" : [
+{
+  "name" : "Corporate"
+  }
+]
+  }
+{% endschema %}

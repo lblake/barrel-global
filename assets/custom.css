@@ -1,0 +1,850 @@
+/* @font-face {
+    font-family: 'Futura XBlk BT';
+    src: url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-ExtraBlack.woff2?v=1695013904') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-ExtraBlack.woff?v=1695013904') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-ExtraBlack.ttf?v=1695013904') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-Book.woff2?v=1695013904') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-Book.woff?v=1695013904') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-Book.ttf?v=1695013904') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-Heavy.woff2?v=1695013904') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-Heavy.woff?v=1695013904') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-Heavy.ttf?v=1695013904') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @font-face {
+    font-family: 'Futura BdCn BT';
+    src: url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-BoldCondensed.woff2?v=1695013904') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-BoldCondensed.woff?v=1695013904') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/FuturaBT-BoldCondensed.ttf?v=1695013904') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'Roundo';
+    src: url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Medium.woff2?v=1695014195') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Medium.woff?v=1695014195') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Medium.ttf?v=1695014195') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roundo';
+    src: url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Light.woff2?v=1695014194') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Light.woff?v=1695014195') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Light.ttf?v=1695014195') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roundo';
+    src: url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Regular.woff2?v=1695014195') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Regular.woff?v=1695014195') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Regular.ttf?v=1695014195') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roundo';
+    src: url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Bold.woff2?v=1695014195') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Bold.woff?v=1695014195') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Roundo-Bold.ttf?v=1695014195') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+Strong {
+    font-family: 'Futura Hv BT' !important;
+    font-weight: 900;
+}
+
+Body,
+p {
+    font-family: 'Roundo' !important;
+}
+
+section,
+footer,
+header {
+    border: 2px solid #000;
+    border-top: 0;
+}
+
+/* .page-width {
+    max-width: 1340px;
+    padding: 0 38px !important;
+} */
+
+.header:not(.drawer-menu).page-width {
+    background: #fff;
+}
+
+sticky-header {
+    border-bottom: 0 !important;
+}
+
+.corporate_sec1 {
+    border: 2px solid #000;
+    border-top: 0;
+}
+
+.header .header__icons {
+    display: none;
+}
+
+.header .onclick-menu {
+    color: #000;
+    font-family: Futura Hv BT;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+}
+
+.header .social-icons ul li a {
+    color: #000;
+    font-family: Futura Hv BT;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header nav.header__inline-menu ul.list-menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header nav.header__inline-menu ul.list-menu li .header__menu-item {
+    color: #000;
+    text-align: center;
+    font-family: Futura Hv BT;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.header nav.header__inline-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 2px solid #000;
+    background: #F1F1EE;
+    border-top: 0;
+    margin: 0;
+    visibility: hidden;
+    padding: 60px 15px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Group_58.png?v=1705641276);
+    background-position: center;
+    background-size: 1263px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: .3s;
+    z-index: 1000;
+}
+
+.header nav.header__inline-menu.active--scroll-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header nav.header__inline-menu ul.list-menu li .header__menu-item .header__active-menu-item {
+    text-decoration: none;
+    color: #67B7A8;
+}
+
+.header nav.header__inline-menu a.menu-btn {
+    border: 1px solid #090909;
+    color: #000;
+    font-family: Futura Hv BT;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    background-color: #67b7a8;
+    padding: 30px 40px;
+    opacity: 1;
+    letter-spacing: normal;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.header__menu-item:hover span {
+    text-decoration: none !important;
+}
+
+section>section {
+    border: 0;
+}
+
+header.header {
+    max-width: 100%;
+    padding: 11.5px 0 !important;
+    border-top: 2px solid #000;
+    column-gap: 0 !important;
+    display: block;
+  position: relative;
+  z-index: 1000;
+}
+
+header.header .page-width {
+    max-width: 1340px;
+    padding: 0 100px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 2rem;
+    display: grid;
+    grid-template-areas: "left-icons heading icons";
+}
+
+header.header .page-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+header.header .page-width .social-icons {
+    display: none;
+}
+
+header.header .page-width .onclick-menu {
+    order: 3;
+}
+
+header.header .page-width .header__inline-menu {
+    order: 2;
+}
+
+header.header .page-width .header__heading {
+    order: 1;
+}
+
+.page-customize-your-tequila {
+    overflow-x: hidden;
+}
+
+.button:after,
+.button:before {
+    display: none;
+}
+
+.header__heading-logo {
+    display: block;
+}
+
+.header__heading-logo-wrapper {
+    display: block !important;
+}
+
+.header--middle-center a.header__heading-link {
+    padding: 0;
+}
+
+.age-popup-activess {
+    overflow: hidden;
+}
+
+html,
+body {
+    overflow-X: hidden;
+}
+
+.contact_barrel .color-background-1 {
+    background-color: #f1f1ee;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.contact_barrel .color-background-1 .both-bg-img {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.contact_barrel .color-background-1 .both-bg-img img.second_img_con {
+    width: 420px;
+    height: auto;
+    position: absolute;
+    left: 90px;
+    top: 50px;
+}
+
+.contact_barrel .color-background-1 .both-bg-img img.first_img_con {
+    position: relative;
+    width: 400px;
+    right: -360px;
+    top: 0;
+    height: auto;
+}
+
+.contact_barrel .color-background-1 .contact h2.title {
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact_barrel .color-background-1 .contact p {
+    font-size: 20px;
+    line-height: 165%;
+    text-align: center;
+    padding: 0 !important;
+    margin: auto;
+    max-width: 320px;
+}
+
+.contact_barrel .color-background-1 .contact .contact__fields .field input {
+    min-height: 62px;
+}
+
+.contact_barrel .color-background-1 .contact .contact__fields .field label.field__label {
+    top: 20px;
+}
+
+.contact_barrel .color-background-1 .contact form {
+    margin-top: 30px;
+}
+
+.contact_barrel .color-background-1 .contact .field textarea {
+    min-height: 112px;
+}
+
+.contact_barrel .color-background-1 .contact .field label {
+    top: 20px;
+}
+
+.contact_barrel .color-background-1 .contact form .contact__button {
+    text-align: center;
+}
+
+.contact_barrel .color-background-1 .contact form .contact__button button.button {
+    background-color: #67B7A8;
+    border: solid 1px #090909;
+    font-size: 18px;
+    font-weight: 600;
+    color: #090909;
+    padding: 33px 157px;
+}
+
+.contact_barrel .color-background-1 .contact {
+    max-width: 804px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 2%);
+    width: 100%;
+    z-index: 1 !important;
+}
+
+.contact_barrel .color-background-1 .contact h2.title strong {
+    color: #67B7A8;
+}
+
+.contact_barrel .color-background-1 .contact  .form-status {
+    background: #fff;
+    padding: 10px 15px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    font-family: 'Roundo' !important;
+    font-weight: 400;
+    margin: 0 0 25px;
+}
+
+.contact_barrel .color-background-1 .contact .form-status svg.icon {
+    width: 2rem;
+    margin: 0 10px 0 0px;
+    height: 2rem;
+}
+
+.page-contact-us nav.header__inline-menu.active--scroll-menu {
+    padding: 60px 15px 113px;
+}
+
+.product_sec .pplr-typography-style select {
+    border: solid 2px #000!important;
+    padding: 20px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 512px;
+    height: 72px;
+}
+
+.product_sec .pplr-typography-style select {
+    background: url(https://cdn.shopify.com/s/files/1/0824/1191/3495/files/Vector.png?v=1709269904) no-repeat;
+    background-position: 95% 50%;
+    background-size: 15px;
+}
+
+.product_sec .pplr-initials-on-the-front-of-the-bottle {
+    margin-top: 50px;
+}
+.product_sec .pplr-initials-on-the-front-of-the-bottle input {
+    border: solid 2px #090909 !important;
+    padding: 20px 25px;
+    height: 72px;
+    max-width: 512px;
+}
+.product_sec .pplr-initials-on-the-front-of-the-bottle input::placeholder {
+    color:#000;
+    font-size:18px;
+  font-weight:700;
+}
+.product_sec .pplr-choose-text-color {
+    margin-top: 50px;
+}
+.product_sec .pplr-typography-style {
+    margin-top: 50px;
+}
+
+span.pplr_prev_span button.pplr-preview-btn {
+    margin: 0;
+    border: 1px solid #090909;
+    background: #67b7a8;
+    color: #090909;
+    font-family: Futura Hv BT;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    padding: 12px 30px;
+}
+
+main > section + section {
+    border-bottom: none !important;
+}
+main > section + section strong {
+    color: #ffb793;
+}
+
+.howitwork {
+    padding-top: 0px !important;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.onclick-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon {
+    width: 28px; /* Default size - you can adjust this */
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Maintain the existing color on mobile */
+  @media (max-width: 989px) {
+    .hamburger-icon {
+      color: #67B7A8;
+    }
+  }
+  
+  /* Optional: Add hover effect */
+  .onclick-menu:hover .hamburger-icon {
+    transform: scale(1.1);
+  }
+  
+  /* You can customize the size using these properties */
+  .hamburger-icon {
+    width: 28px; /* Adjust this value to change the width */
+    height: 20px; /* Adjust this value to change the height */
+  }
+
+
+
+@media (max-width: 1199px) {
+    .contact_barrel .color-background-1 .both-bg-img {
+        width: 100%;
+        padding: 0 40px;
+        max-width: 1115px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img img.first_img_con {
+        position: relative;
+        right: 0;
+        top: 0;
+        height: auto;
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img img.second_img_con {
+        width: 420px;
+        position: relative;
+        left: 0;
+        top: inherit;
+    }
+}
+
+
+@media (max-width: 989px) {
+    header.header {
+
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #000;
+        border-top: none;
+    }
+
+    .header .onclick-menu {
+        color: #67B7A8;
+    }
+
+    .header .social-icons {
+        display: none;
+    }
+
+    .header__inline-menu {
+        display: block;
+    }
+
+    .header nav.header__inline-menu ul.list-menu li .header__menu-item {
+        font-size: 50px;
+    }
+
+    header.header .page-width .header__heading {
+        order: 1;
+    }
+
+    header-drawer.drawer_s {
+        display: none;
+    }
+
+    header.header .page-width {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header.header .page-width .main-cont {
+        order: 3;
+    }
+
+    section,
+    footer,
+    header {
+        border-left: none;
+        border-right: none;
+        border-top: 0;
+    }
+
+    .our_sec_5 {
+        border-bottom: none;
+    }
+
+    .contact_barrel .color-background-1 .contact h2.title {
+        font-size: 50px;
+        line-height: 60px;
+        padding-bottom: 7px;
+        padding-top: 70px;
+    }
+
+    .contact_barrel .color-background-1 .contact {
+        max-width: 100%;
+        left: 0;
+        right: 0;
+        transform: inherit;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .contact_barrel .color-background-1 .contact p {
+        line-height: 33px;
+    }
+
+    .contact_barrel .color-background-1 {
+        padding-bottom: 100px;
+    }
+
+    .contact_barrel .contact form .contact__fields .field {
+        margin-bottom: 20px;
+    }
+
+    .contact_barrel .color-background-1 .contact form .contact__button button.button {
+        padding: 23px 157px;
+        width: 100%;
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img {
+        column-gap: 30px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img img.first_img_con,
+    .contact_barrel .color-background-1 .both-bg-img img.second_img_con {
+
+        width: 47%
+    }
+.product .product__media-wrapper {
+    width: 100%!important;
+    max-width: 100%!important;
+}
+  .product .product__info-wrapper {
+    max-width: 100%!important;
+    width: 100%!important;
+    padding: 50px 0 0 20px!important;
+}
+  .quantity-price {
+    display: inline-block !important;
+    width: 100% !important;
+}
+  .quantity-price .price {
+    margin-left: -50px !important;
+}
+  .quantity-price .price__container .price__sale span {
+    padding-left: 50px;
+}
+  .quantity-price .price__container .price__sale div#price-sentence {
+    padding-left: 50px;
+}
+  .product_sec .pplr-typography-style select {
+    padding: 19px;
+    margin-top: 40px;
+}
+.product_sec .pplr-initials-on-the-front-of-the-bottle input {
+    padding: 19px;
+    margin-top: 10px;
+}
+}
+
+@media (max-width: 767px) {
+    .contact_barrel .color-background-1 .both-bg-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+.page-contact-us nav.header__inline-menu.active--scroll-menu {
+    padding: 60px 15px 60px;
+}
+    .contact_barrel .color-background-1 {
+        padding-bottom: 159px;
+        min-height: 811px;
+    }
+.product__info-wrapper .product-personalizer label.pplrlabel, .product__info-wrapper variant-radios legend.form__label, .product-form__quantity label {
+    margin-bottom: 15px!important;
+    font-size: 18px;
+}
+    .contact_barrel .color-background-1 .contact h2.title {
+        padding-top: 85px;
+    }
+  .product_sec .pplr-choose-text-color, .product_sec .pplr-typography-style {
+    margin-top: 20px;
+}
+  .product_sec .pplr-initials-on-the-front-of-the-bottle {
+    margin-top: 30px;
+}
+
+    .contact_barrel .color-background-1 .both-bg-img img.first_img_con {
+        top: -10px;
+        order: 2;
+        right: -20%;
+        width: auto;
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img img.second_img_con {
+        left: -50%;
+        margin-top: 103px;
+        width: auto;
+    }
+
+    .contact_barrel .color-background-1 .contact {
+        max-width: 594px;
+    }
+
+    .header nav.header__inline-menu {
+        background-size: 990px;
+        height: calc(100vh - 111px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 749px) {
+
+    /* .header nav.header__inline-menu ul.list-menu li .header__menu-item {
+    font-size: 40px;
+} */
+    header.header .page-width {
+        padding: 0 20px;
+    }
+
+    .header nav.header__inline-menu {
+        background-size: 1152px;
+    }
+
+}
+
+@media (max-width: 740px) {
+    .contact_barrel .color-background-1 .contact h2.title {
+        padding-top: 35px;
+    }
+
+    .header__heading-logo {
+        width: 55px;
+    }
+
+    .header nav.header__inline-menu {
+        height: calc(100vh - 77px);
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img img.second_img_con,
+    .contact_barrel .color-background-1 .both-bg-img img.first_img_con {
+        width: 50vw;
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img img.first_img_con {
+
+        right: -33%;
+
+
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img img.second_img_con {
+        left: -40%;
+
+
+    }
+
+
+}
+
+@media (max-width: 574px) {
+    .header nav.header__inline-menu ul.list-menu li .header__menu-item {
+        font-size: 30px;
+    }
+
+    .header nav.header__inline-menu a.menu-btn {
+        font-size: 16px;
+        padding: 30px 25px;
+        max-width: 330px;
+    }
+
+    .header nav.header__inline-menu {
+        background-size: 680px;
+    }
+
+
+
+}
+
+
+@media (max-width: 480px) {
+    .contact_barrel .color-background-1 .both-bg-img img.first_img_con {
+        right: 0;
+        display: none;
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img img.second_img_con {
+        left: 0;
+        width: 100%;
+        margin-top: 147px;
+        display: block;
+        min-height: 559px;
+
+    }
+
+    .contact_barrel .color-background-1 .contact h2.title {
+        font-size: 36px;
+        line-height: 44px;
+
+    }
+
+    .contact_barrel .color-background-1 .contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact_barrel .color-background-1 {
+        padding-bottom: 0;
+        min-height: inherit;
+    }
+
+}
+
+@media (max-width:389px) {
+    .contact_barrel .color-background-1 .contact p {
+        font-size: 17px;
+
+    }
+
+    .contact_barrel .color-background-1 .both-bg-img img.second_img_con {
+
+        object-fit: cover;
+    }
+
+    .contact_barrel .color-background-1 .contact form .contact__button {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact_barrel .color-background-1 .contact form .contact__button button.button {
+        padding: 23px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,222 @@
+.accordion summary {
+  display: flex;
+  position: relative;
+  line-height: 1;
+  padding: 1.5rem 0;
+}
+
+.accordion .summary__title {
+  display: flex;
+  flex: 1;
+}
+
+.accordion .summary__title+.icon-caret {
+  height: calc(var(--font-heading-scale) * 0.6rem);
+}
+
+.page-our-tequila .icon-with-text .collapsible-content__wrapper {
+  background-color: #fff;
+}
+
+.accordion+.accordion {
+  margin-top: 0;
+  border-top: none;
+}
+
+.accordion {
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+}
+
+.accordion__title {
+  display: inline-block;
+  max-width: calc(100% - 6rem);
+  min-height: 1.6rem;
+  margin: 0;
+  word-break: break-word;
+}
+
+.accordion .icon-accordion {
+  align-self: center;
+  fill: rgb(var(--color-foreground));
+  height: calc(var(--font-heading-scale) * 2rem);
+  margin-right: calc(var(--font-heading-scale) * 1rem);
+  width: calc(var(--font-heading-scale) * 2rem);
+}
+
+.accordion details[open]>summary .icon-caret {
+  transform: rotate(180deg);
+}
+
+.accordion__content {
+  margin-bottom: 1.5rem;
+  word-break: break-word;
+  overflow-x: auto;
+  padding: 0 0.6rem;
+}
+
+.accordion__content img {
+  max-width: 100%;
+}
+
+/* new css */
+
+
+.icon-with-text .collapsible-content__wrapper {
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+body.page-corporate .icon-with-text .collapsible-content__wrapper {
+  background-color: #fff;
+}
+
+.icon-with-text .collapsible-content__wrapper .collapsible-content-wrapper-narrow {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.icon-with-text .grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-with-text .content .text-box svg.icon {
+  display: none;
+}
+
+.icon-with-text .content .text-box h3.text-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  color: #FFB793;
+  padding: 0 15px;
+}
+
+.icon-with-text .content .text-box img {
+  width: 100%;
+  max-width: 40px;
+  margin-right: 15px;
+  height: 29px;
+}
+
+/* .icon-with-text .content:last-child, .page-our-tequila .icon-with-text .content:last-child {
+  flex: 0 3%;
+}
+
+.page-our-tequila .icon-with-text .content {
+  flex: 0 25%;
+} */
+
+.icon-with-text .content {
+  flex: 0 auto;
+  padding: 0 10px;
+}
+
+.icon-with-text .content .text-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+/* .page-corporate .icon-with-text .grid__item .content {
+  flex: initial;
+}
+
+.page-corporate .icon-with-text .grid__item {
+  justify-content: space-around;
+} */
+
+.page-corporate .text-box img {
+  width: 27px !important;
+  height: 17px !important;
+  margin-right: 10px !important;
+
+}
+
+.page-corporate .text-box h3.text-title {
+  color: #FFB793;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media (max-width: 1440px) {
+  .icon-with-text .grid__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  /* .icon-with-text .content {
+    flex: 0 100%;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0px 30px;
+} */
+  .icon-with-text .grid__item .content:last-child .text-box {
+    width: 53px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .icon-with-text .content .text-box h3.text-title {
+    font-size: 20px;
+  }
+
+
+}
+
+@media (max-width: 989px) {
+  .icon-with-text .content .text-box h3.text-title {
+    font-size: 16px;
+  }
+
+  .icon-with-text .content .text-box img {
+    width: 100%;
+    max-width: 25px;
+    margin-right: 5px;
+  }
+
+  .page-our-tequila .icon-with-text .collapsible-content__wrapper {
+    background-color: #fff;
+  }
+
+  .page-our-tequila .icon-with-text .content .text-box h3.text-title {
+    font-size: 18px;
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 749px) {
+
+
+  .page-about-us .home-1 .slider_img_mob img {
+    bottom: 0;
+    top: initial !important;
+  }
+
+  .page-about-us .home-1 .slideshow__text-wrapper .slideshow__text {
+    padding: 60px 0 130px;
+  }
+
+}
+
+@media (max-width: 740px) {
+  .page-our-tequila .icon-with-text .content .text-box h3.text-title {
+    font-size: 18px;
+    padding: 0 50px;
+  }
+
+}

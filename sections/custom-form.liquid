@@ -1,0 +1,165 @@
+{% style %}
+    .custom-form-header {
+        text-transform: uppercase;
+        color: #FFB793;
+        font-size: 50px;
+        margin: 20px 0;
+    }
+    .section-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        padding: 10rem 0;
+        position: relative;
+    }
+    .section-grid input {
+        max-width: 300px;
+        border-radius: 14px;
+        border: none;
+        height: 36px;
+        padding: 2rem;
+    }
+
+    .form-inputs {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-gap: 1rem;
+        column-gap: 1.25rem;
+        row-gap: 3rem;
+        margin-bottom: 1rem;
+    }
+    .section-grid span {
+        font-weight: bold;
+    }
+
+    .section-grid button{
+        margin-top: 3rem;
+        background-color: #67b7a8;
+        color: #1a1a1a;
+        border: solid 1px;
+        font-weight: bold;
+        padding: 2rem 4rem;
+    }
+
+    .section-grid form{
+        position: absolute;
+        z-index: 1;
+    }
+
+    section.black--border{
+        border-bottom: solid 2px black !important;
+    }
+
+
+    /*====== Media Queries ======*/
+    @media screen and (min-width: 1200px){
+        .section-grid .newsletter-form{
+            max-width: unset;
+        }
+    }
+
+    @media screen and (min-width: 750px){
+        .section-grid .newsletter-form{
+            max-width: unset;
+        }
+
+        .section-grid .custom-form-header{
+            font-size: 40px;
+        }
+    }
+
+
+    /*Breakpoint where section and form layout change*/
+    @media screen and (max-width:900px){
+        .section-grid{
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+        }
+
+        .section-grid form{
+            position: static;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-grid .form-inputs{
+            grid-template-columns: 1fr;
+            max-width: unset;
+        }
+
+        .section-grid .form-inputs input{
+            width: 500px;
+        }
+
+        .section-grid .button{
+            max-width: 450px;
+        }
+
+        .section--image-container{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+{% endstyle %}
+
+<div class = "page-width" id="send-info">
+    <div class="section-grid">
+        <div>
+        {% form 'customer', class: 'newsletter-form' %}
+            <h2 class="custom-form-header">Spice up your inbox!</h2>
+            <p>Receive <span>info</span>, <span>tips</span> on how to design your <span>label</span>, and <span>special offer!</span></p>
+            <br>
+            <div class="form-inputs">
+                <input type="text" name="contact[first_name]" placeholder="FIRST NAME" required value="{{ form.first_name }}">
+                <input type="email" name="contact[email]" id="email" placeholder="MAIN EMAIL" required value="{{ form.email }}">
+                <input type="text" name="contact[last_name]" placeholder="LAST NAME" value="{{ form.last_name }}">
+                <input type="tel" name="contact[note][phone_number]" placeholder="PHONE NUMBER" required value="{{ form.phone }}">
+            </div>
+            {% comment %} captcha {% endcomment %}
+            <button class="button">Yes, Send me offers & ideas!</button>
+
+            {%- if form.errors -%}
+                <small class="newsletter-form__message form__message">
+                {%- render 'icon-error' -%}
+                {{- form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email -}}
+                </small>
+            {%- endif -%}
+
+            {%- if form.posted_successfully? -%}
+            <h3
+              class="newsletter-form__message newsletter-form__message--success form__message"
+              tabindex="-1"
+              autofocus
+            >
+              {% render 'icon-success' -%}
+              Thank you for your submission.
+            </h3>
+          {%- endif -%}
+        {% endform %}
+        </div>
+        <div class = "section--image-container">
+            <img style = "transform: rotate(-1deg); border-radius: 10px;" height = "600" src="{{ 'custom_form_image.jpeg' |  asset_url }}" alt="placeholder image">
+        </div>
+    </div>
+</div>
+
+
+
+{% schema %}
+{
+    "name": "custom form",
+    "tag": "section",
+    "class": "black--border",
+    "settings": [
+        ],
+        "presets": [
+    {
+      "name": "custom form",
+      "settings": {
+      },
+    }
+  ]
+}
+{% endschema %}
+
